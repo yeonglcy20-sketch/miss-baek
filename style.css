@@ -117,7 +117,7 @@ display:flex;
 align-items:center;
 gap:7px;
 }
-.item-title:before{content:'🤍'}
+.item-title:before{content:'☁️'}
 .item-row{
 display:inline-block;
 margin:4px 5px 4px 0;
