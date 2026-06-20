@@ -18,7 +18,7 @@ radial-gradient(circle at 18% 82%,rgba(255,255,255,.75),transparent 15%),
 radial-gradient(circle at 82% 78%,rgba(174,230,255,.32),transparent 18%);
 }
 .bg:before,.bg:after{
-content:'♡  🤍  ♡  🤍  ♡';
+content:'☁️  🤍  ☁️  🚪  ☁️';
 position:fixed;
 left:0;
 right:0;
@@ -117,20 +117,17 @@ display:flex;
 align-items:center;
 gap:7px;
 }
-.item-title:before{content:'♡';color:#cfd8dc;text-shadow:0 2px 6px rgba(117,190,230,.22)}
+.item-title:before{content:'☁️'}
 .item-row{
-display:block;
-width:fit-content;
-max-width:100%;
-margin:6px 0;
-padding:7px 12px;
+display:inline-block;
+margin:4px 5px 4px 0;
+padding:6px 10px;
 border-radius:999px;
 background:#f2fbff;
 border:1px solid #d9f2ff;
 color:#3b4a50;
 font-size:15px;
 font-weight:600;
-line-height:1.35;
 }
 .item-row b{color:#2f6f8f}
 .empty{
@@ -154,93 +151,14 @@ border-radius:22px;
 }
 
 
-/* 최종 백잼민 하얀 하트 테마 */
-.hero-icon{
-color:#d5dde2;
-text-shadow:0 3px 8px rgba(117,190,230,.25);
-font-weight:900;
+/* Force vertical list */
+.item-list,.karma-list,.records,.items{
+display:flex !important;
+flex-direction:column !important;
+gap:4px !important;
 }
-
-
-/* 1열 압축 리스트 카드 버전 */
-.container,
-.wrap,
-.main,
-.app,
-main{
-  max-width: 900px !important;
-}
-
-.card,
-.member-card,
-.person-card,
-.record-card,
-.item-card,
-.list-card{
-  padding: 8px 12px !important;
-  margin-bottom: 8px !important;
-  border-radius: 14px !important;
-}
-
-.item-title,
-.card-title,
-.name,
-.nickname,
-.member-name{
-  font-size: 19px !important;
-  margin-bottom: 4px !important;
-  line-height: 1.2 !important;
-}
-
-.items,
-.item-list,
-.karma-list,
-.records,
-.badge-list,
-ul{
-  display: block !important;
-  margin-top: 4px !important;
-}
-
-.item-row,
-.karma-item,
-.record-item,
-.badge,
-.tag,
-li{
-  display: block !important;
-  width: fit-content !important;
-  max-width: 100% !important;
-  margin: 2px 0 !important;
-  padding: 4px 9px !important;
-  font-size: 14px !important;
-  line-height: 1.25 !important;
-  border-radius: 999px !important;
-}
-
-.item-row::before,
-.karma-item::before,
-.record-item::before{
-  content: "• ";
-  opacity: .55;
-}
-
-.hero,
-.header,
-.title-box{
-  padding: 14px 16px !important;
-  margin-bottom: 10px !important;
-}
-
-h1{
-  font-size: clamp(28px, 4vw, 42px) !important;
-  margin: 0 !important;
-}
-
-.search,
-.search-box,
-input[type="search"],
-input[type="text"]{
-  padding: 8px 12px !important;
-  margin: 8px 0 !important;
+.item-row,.karma-item,.record-item{
+display:block !important;
+width:100% !important;
+margin:2px 0 !important;
 }
