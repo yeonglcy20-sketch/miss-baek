@@ -190,3 +190,129 @@ width:auto !important;
 max-width:max-content !important;
 margin:4px 0 !important;
 }
+
+
+/* 카드형 리스트 압축 버전 - 오른쪽 예시처럼 여러 카드 나열 */
+body{
+  overflow-x: hidden;
+}
+
+.container,
+.wrap,
+.main,
+.app,
+main,
+#app{
+  max-width: 1220px !important;
+  width: min(96vw, 1220px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 사람/닉네임 카드들을 그리드로 배치 */
+#list,
+#result,
+#records,
+#cards,
+.list,
+.result,
+.records,
+.cards,
+.card-list,
+.member-list{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+}
+
+/* 개별 닉네임 카드 */
+.card,
+.member-card,
+.person-card,
+.record-card,
+.item-card,
+.list-card,
+.user-card,
+.entry{
+  min-height: 190px !important;
+  height: auto !important;
+  padding: 22px 20px !important;
+  margin: 0 !important;
+  border-radius: 18px !important;
+  box-sizing: border-box !important;
+}
+
+/* 닉네임 */
+.item-title,
+.card-title,
+.name,
+.nickname,
+.member-name,
+.user-name,
+h2,
+h3{
+  font-size: 22px !important;
+  line-height: 1.25 !important;
+  margin: 0 0 14px 0 !important;
+  font-weight: 800 !important;
+}
+
+/* 닉네임 앞 아이콘 */
+.item-title:before,
+.card-title:before,
+.name:before,
+.nickname:before,
+.member-name:before,
+.user-name:before{
+  content: "☁️ " !important;
+}
+
+/* 업보 리스트: 카드 안에서 세로로 짧게 */
+.items,
+.item-list,
+.karma-list,
+.records-list,
+.badge-list,
+ul{
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 업보 항목: 박스가 길게 늘어나지 않게 텍스트형으로 압축 */
+.item-row,
+.karma-item,
+.record-item,
+.badge,
+.tag,
+li{
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 0 8px 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  line-height: 1.45 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* 혹시 기존 알약 내부 숫자 배지가 있다면 작게 유지 */
+.count,
+.num{
+  display: inline !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* 제목 양옆 장식 제거/정리 */
+h1{
+  white-space: nowrap !important;
+}
