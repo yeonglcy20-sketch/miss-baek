@@ -176,3 +176,17 @@ margin:3px 0 !important;
 .item{
 padding:14px 16px;
 }
+
+
+/* REAL vertical layout fix */
+.item{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+.item-row{
+display:block !important;
+width:auto !important;
+max-width:max-content !important;
+margin:4px 0 !important;
+}

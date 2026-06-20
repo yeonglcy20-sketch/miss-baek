@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>백잼민의 문단속</title>
-<style>
-body{font-family:sans-serif;padding:20px}
-.nickname{font-size:24px;font-weight:bold;margin-bottom:12px}
-.item{margin:6px 0}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="nickname">☁️ 닉네임</div>
-<div class="item">후원선택권 : 1</div>
-<div class="item">뽀뽀 : 2</div>
-<div class="item">사랑해 : 3</div>
+<div class="bg"></div>
+
+<header class="hero">
+  <div class="hero-icon">☁️</div>
+  <div class="hero-text">
+    <h1>백잼민의 문단속</h1>
+    <p>업보 리스트</p>
+  </div>
+  <div class="hero-icon">☁️</div>
+</header>
+
+<section class="search-box">
+  <input id="searchInput" type="text" placeholder="업보 검색하기...">
+</section>
+
+<section id="list" class="card-list"></section>
+
+<script src="script.js"></script>
 </body>
 </html>
