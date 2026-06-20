@@ -18,7 +18,7 @@ radial-gradient(circle at 18% 82%,rgba(255,255,255,.75),transparent 15%),
 radial-gradient(circle at 82% 78%,rgba(174,230,255,.32),transparent 18%);
 }
 .bg:before,.bg:after{
-content:'☁️  🤍  ☁️  🚪  ☁️';
+content:'♡  🤍  ♡  🤍  ♡';
 position:fixed;
 left:0;
 right:0;
@@ -117,17 +117,20 @@ display:flex;
 align-items:center;
 gap:7px;
 }
-.item-title:before{content:'☁️'}
+.item-title:before{content:'♡';color:#cfd8dc;text-shadow:0 2px 6px rgba(117,190,230,.22)}
 .item-row{
-display:inline-block;
-margin:4px 5px 4px 0;
-padding:6px 10px;
+display:block;
+width:fit-content;
+max-width:100%;
+margin:6px 0;
+padding:7px 12px;
 border-radius:999px;
 background:#f2fbff;
 border:1px solid #d9f2ff;
 color:#3b4a50;
 font-size:15px;
 font-weight:600;
+line-height:1.35;
 }
 .item-row b{color:#2f6f8f}
 .empty{
@@ -148,4 +151,12 @@ border-radius:22px;
 .item-title{font-size:19px}
 .item-row{font-size:13px;padding:5px 8px}
 .bg:before,.bg:after{font-size:24px;letter-spacing:18px}
+}
+
+
+/* 최종 백잼민 하얀 하트 테마 */
+.hero-icon{
+color:#d5dde2;
+text-shadow:0 3px 8px rgba(117,190,230,.25);
+font-weight:900;
 }
