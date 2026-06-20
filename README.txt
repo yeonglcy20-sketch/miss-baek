@@ -13,3 +13,7 @@
 1. ZIP 압축 해제
 2. GitHub 저장소에 파일 업로드
 3. GitHub Pages에서 확인
+
+
+스프레드시트 변경 완료:
+https://docs.google.com/spreadsheets/d/1TPfMxZYJ9ct6Zb7hUnB_3UbTTu8wgQQzxCE5m3cSTQg/edit?usp=sharing
