@@ -18,7 +18,7 @@ radial-gradient(circle at 18% 82%,rgba(255,255,255,.75),transparent 15%),
 radial-gradient(circle at 82% 78%,rgba(174,230,255,.32),transparent 18%);
 }
 .bg:before,.bg:after{
-content:'☁️  🤍  ☁️  🚪  ☁️';
+content:'🤍  🤍  🤍  🤍  🤍';
 position:fixed;
 left:0;
 right:0;
@@ -117,7 +117,7 @@ display:flex;
 align-items:center;
 gap:7px;
 }
-.item-title:before{content:'☁️'}
+.item-title:before{content:'🤍'}
 .item-row{
 display:inline-block;
 margin:4px 5px 4px 0;
@@ -161,4 +161,18 @@ gap:4px !important;
 display:block !important;
 width:100% !important;
 margin:2px 0 !important;
+}
+
+
+/* compact list width */
+.item-row{
+display:inline-block !important;
+width:auto !important;
+max-width:max-content !important;
+white-space:nowrap;
+padding:6px 12px !important;
+margin:3px 0 !important;
+}
+.item{
+padding:14px 16px;
 }
