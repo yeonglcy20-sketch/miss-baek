@@ -5,3 +5,24 @@
 
 /* 백선화 공식 로고 헤더 */
 .hero-copy{flex:1;min-width:0;text-align:center}.brand-logo{display:block;width:min(100%,610px);height:auto;max-height:255px;object-fit:contain;margin:0 auto 8px;filter:drop-shadow(0 8px 13px #8fc9eb33)}.hero .subtitle{text-align:center}.hero-character{position:relative;z-index:1;max-width:100%;max-height:205px;object-fit:contain}@media(max-width:700px){.brand-logo{max-height:180px}.hero-art{flex-basis:150px}}@media(max-width:480px){.brand-logo{max-height:165px}.hero{padding:20px 14px}}
+
+/* 하늘 정원 배경 확장 — 데이터/기능 영역과 분리된 장식 레이어 */
+body{background:radial-gradient(ellipse at 50% -10%,#fffefa 0%,transparent 48%),radial-gradient(ellipse at 8% 32%,#f9fdff 0%,transparent 40%),radial-gradient(ellipse at 90% 63%,#dbf2ff 0%,transparent 43%),linear-gradient(180deg,#d9f1ff 0%,#ecf9ff 39%,#fefaff 76%,#f5fbff 100%)}
+.garden-decor{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;isolation:isolate}
+.garden-sun{position:absolute;top:-185px;right:9%;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,#fffefaeb 0%,#fffefc90 25%,#fef9e744 45%,transparent 72%);filter:blur(7px)}
+.garden-rainbow{position:absolute;top:85px;left:-185px;width:700px;height:700px;border-radius:50%;border:24px solid #fff9;box-shadow:0 0 0 24px #ccecff3b,0 0 0 48px #f5ddec36,0 0 0 72px #d3f4ed2e;opacity:.44;transform:rotate(-22deg)}
+.garden-cloud{position:absolute;width:210px;height:72px;background:#ffffffa8;border-radius:70px;filter:drop-shadow(0 10px 15px #a5d8ed3a)}
+.garden-cloud:before,.garden-cloud:after{content:'';position:absolute;background:inherit;border-radius:50%}.garden-cloud:before{width:104px;height:104px;left:29px;bottom:15px}.garden-cloud:after{width:120px;height:120px;right:14px;bottom:2px}
+.gc-one{top:14%;left:-45px;transform:scale(1.2)}.gc-two{top:29%;right:-45px;transform:scale(1.45)}.gc-three{bottom:18%;left:2%;transform:scale(.83)}.gc-four{bottom:5%;right:7%;transform:scale(1.05)}
+.garden-sparkle,.garden-flower,.garden-petal{position:absolute;text-shadow:0 3px 10px #fff;color:#fff;animation:gentleFloat 7s ease-in-out infinite alternate}
+.garden-sparkle{font-size:34px;color:#fffefa;filter:drop-shadow(0 0 5px #a4d9f5)}.gs-one{top:13%;left:8%}.gs-two{top:37%;right:9%;animation-delay:-2s}.gs-three{bottom:23%;right:16%;animation-delay:-4s}.gs-four{bottom:11%;left:18%;animation-delay:-1s}
+.garden-flower{font-size:40px;color:#fff;text-shadow:0 0 2px #9ad2f1,0 4px 13px #8fc9ed66}.gf-one{top:26%;left:4%}.gf-two{top:48%;right:3%;font-size:30px;animation-delay:-2s}.gf-three{bottom:27%;left:6%;font-size:29px;animation-delay:-4s}.gf-four{bottom:10%;right:9%;font-size:45px;animation-delay:-1s}
+.garden-petal{font-size:17px;color:#ffd9e9;opacity:.8}.gp-one{top:19%;right:29%;animation-delay:-3s}.gp-two{top:57%;left:12%;animation-delay:-5s}.gp-three{bottom:34%;right:7%;animation-delay:-1s}
+.hero{position:relative;overflow:hidden;border:1px solid #fff;background:linear-gradient(115deg,#ffffffec,#e8f7ffcf 70%,#fff8fbed);box-shadow:0 18px 65px #8dbbd53d,0 2px 0 #ffffffb3 inset}
+.hero:before{content:'✧   ✿   ✧';position:absolute;top:17px;left:22px;letter-spacing:14px;color:#b3dcf0a8;font-size:20px}.hero:after{content:'✿';position:absolute;bottom:8px;right:18px;color:#d7ebf7;font-size:44px}
+.search-wrap{background:#fffffff0;box-shadow:0 10px 28px #9fcee339,0 1px 0 #fff inset}
+.item{background:linear-gradient(145deg,#fff,#f3fbff 75%,#fff9fd);box-shadow:0 9px 26px #9fcde334,0 1px 0 #fff inset}
+.section-title{display:flex;align-items:center;justify-content:center;gap:16px}.section-title:before,.section-title:after{content:'';width:clamp(20px,9vw,95px);height:1px;background:linear-gradient(90deg,transparent,#b5daee,transparent)}
+@keyframes gentleFloat{from{transform:translateY(0) rotate(-7deg)}to{transform:translateY(-14px) rotate(8deg)}}
+@media(max-width:700px){.garden-rainbow{width:470px;height:470px;top:80px;left:-250px}.garden-sun{right:-200px;width:410px;height:410px}.garden-cloud{opacity:.65}.garden-flower{font-size:25px}.hero:before{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.garden-sparkle,.garden-flower,.garden-petal{animation:none}}
