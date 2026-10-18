@@ -2,3 +2,6 @@
 
 .hero-character{position:relative;z-index:1;width:220px;height:205px;object-fit:contain;filter:drop-shadow(0 12px 12px #8db8d455)}
 @media(max-width:700px){.hero-character{width:185px;height:185px}}
+
+/* 백선화 공식 로고 헤더 */
+.hero-copy{flex:1;min-width:0;text-align:center}.brand-logo{display:block;width:min(100%,610px);height:auto;max-height:255px;object-fit:contain;margin:0 auto 8px;filter:drop-shadow(0 8px 13px #8fc9eb33)}.hero .subtitle{text-align:center}.hero-character{position:relative;z-index:1;max-width:100%;max-height:205px;object-fit:contain}@media(max-width:700px){.brand-logo{max-height:180px}.hero-art{flex-basis:150px}}@media(max-width:480px){.brand-logo{max-height:165px}.hero{padding:20px 14px}}
