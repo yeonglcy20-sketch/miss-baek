@@ -60,7 +60,7 @@ searchInput.addEventListener('input',render);
 setInterval(()=>{if(dialog.open&&detailState==='ready')showDetails();},60000);
 
 function setNicknameTitle(element,name){
- const icon=document.createElement('img');icon.src='jellyfish.png';icon.alt='';icon.className='nickname-jelly';icon.setAttribute('aria-hidden','true');
+ const icon=document.createElement('img');icon.src='sleeping_monkey_icon.png';icon.alt='';icon.className='nickname-jelly';icon.setAttribute('aria-hidden','true');
  const label=document.createElement('span');label.textContent=name;
  element.replaceChildren(icon,label);
 }
